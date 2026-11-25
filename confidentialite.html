@@ -31,10 +31,10 @@
 <article id="fr" lang="fr">
 <h1>Politique de confidentialité de TAK’</h1>
 <div class="policy-body">
-<p class="meta">Dernière mise à jour : 24 novembre 2026.<br>
+<p class="meta">Dernière mise à jour : 25 novembre 2026.<br>
 Éditeur : Midnight O’Clock Studio. Contact : <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a>.</p>
 
-<p>TAK’ est un jeu d’empilement en rythme. Il ne demande ni compte, ni nom, ni adresse e-mail. Il n’affiche aucune publicité. L’application Android utilise Google Play Jeux et propose le partage facultatif des statistiques de jeu via Google Analytics pour Firebase.</p>
+<p>TAK’ est un jeu d’empilement en rythme. Il ne vous demande pas de créer de compte et ne vous demande ni nom ni adresse e-mail. Il n’affiche aucune publicité et ne propose aucun achat en argent réel. L’application Android utilise Google Play Jeux (classements, succès, sauvegarde) et propose le partage facultatif des statistiques de jeu via Google Analytics pour Firebase. Elle n’envoie aucun diagnostic à l’éditeur.</p>
 
 <h2>Ce qui reste sur votre appareil</h2>
 <p>Le jeu garde dans le stockage local de l’application (ou du navigateur) :</p>
@@ -44,15 +44,24 @@
 <li>un historique des 60 dernières parties (score, durée, motif de fin), conservé localement ;</li>
 <li>votre portefeuille : pièces gagnées et dépensées, mondes et briques obtenus et équipés ;</li>
 <li>vos choix concernant les diagnostics et les statistiques de jeu ;</li>
-<li>le compteur de parties terminées et, si disponible, le total de pièces gagnées sur les dix premières (application Android).</li>
+<li>le compteur de parties terminées et, si disponible, le total de pièces gagnées sur les dix premières (application Android) ;</li>
+<li>vos profils de calage du son : un décalage en millisecondes pour chaque type de sortie audio (haut-parleur, écouteurs filaires, casque Bluetooth, autre). Le jeu détecte seulement le type de sortie utilisée : il ne lit ni le nom ni l’adresse de vos appareils Bluetooth et ne demande aucune autorisation Bluetooth ;</li>
+<li>dans l’application Android, un jeton aléatoire propre à cette installation, ainsi que le fabricant et le modèle du téléphone. Ils servent uniquement à vérifier que vos profils de calage du son ont été validés sur ce téléphone ;</li>
+<li>dans l’application Android, si vous êtes connecté à Google Play Jeux, votre identifiant de joueur Play Jeux, pour garder séparées les progressions de chaque profil.</li>
 </ul>
+<p>L’éditeur ne reçoit aucune de ces données. Seules quittent l’appareil celles que décrivent les sections « Statistiques de jeu facultatives » et « Google Play Jeux » ci-dessous, ainsi que la sauvegarde Android gérée par le système.</p>
 <p>Pour effacer les données locales : dans Android, Paramètres &gt; Applications &gt; TAK’ &gt; Stockage &gt; Effacer les données, ou désinstallez le jeu ; dans un navigateur, effacez les données du site.</p>
 
-<h2>Diagnostics</h2>
-<p>Selon la version installée, le jeu fonctionne de l’une des deux façons suivantes. La fenêtre Confidentialité, dans les Réglages du jeu, indique laquelle s’applique.</p>
+<h3>Sauvegarde Android et restauration</h3>
+<p>Si la sauvegarde Android est activée sur votre téléphone, Android peut copier ces données dans votre compte Google, puis les restaurer ou les transférer sur un nouveau téléphone. Cette sauvegarde est gérée par Android et Google : l’éditeur ne la reçoit pas.</p>
+<p>En sont exclus : votre choix concernant les statistiques de jeu, les données locales de Google Analytics et le jeton d’installation. Après une restauration ou un transfert, le jeu vous redemande donc votre choix, et rien n’est envoyé à Google Analytics avant votre réponse. Le jeu crée aussi un nouveau jeton : vos profils de calage du son restaurés vous sont proposés, mais ne sont appliqués qu’après votre confirmation.</p>
+
+<h2>Diagnostics de l’éditeur</h2>
+<p>L’application Android n’envoie aucun diagnostic à l’éditeur : cette fonction est absente de sa version, et aucun identifiant d’installation de diagnostic n’y est créé. Les kits de Google intégrés à l’application (Google Play Jeux et, si vous l’acceptez, Google Analytics pour Firebase) peuvent en revanche collecter leurs propres données techniques. Ils sont décrits dans les sections suivantes.</p>
+<p>La version web du jeu fonctionne de l’une des deux façons suivantes. La fenêtre Confidentialité, dans les Réglages du jeu, indique laquelle s’applique.</p>
 
 <h3>Version sans diagnostics</h3>
-<p>Aucun diagnostic n’est envoyé et aucun identifiant d’installation n’est créé.</p>
+<p>Aucun diagnostic n’est envoyé et aucun identifiant d’installation de diagnostic n’est créé.</p>
 
 <h3>Version avec diagnostics facultatifs</h3>
 <p>Les diagnostics sont désactivés tant que vous ne les activez pas dans les Réglages. Une fois activés, le jeu envoie un rapport à l’éditeur à la fin de chaque partie et lors d’une pause. Ce rapport contient :</p>
@@ -69,23 +78,31 @@
 
 <h2>Statistiques de jeu facultatives (application Android)</h2>
 <p>Les statistiques sont désactivées au départ. Au premier lancement, vous pouvez choisir de les partager ou de continuer sans les partager. Dans Réglages &gt; Données et confidentialité, activez ou désactivez « Partager les statistiques de jeu » à tout moment. Votre choix est enregistré sur cet appareil.</p>
-<p>Si le partage est activé, Google Analytics pour Firebase reçoit la hauteur, le numéro et les pièces gagnées à la fin des parties, les dépenses en pièces et les cartes équipées. Google Analytics utilise un identifiant d’instance de l’application et recueille aussi des informations techniques sur l’appareil et l’utilisation de l’application, ainsi qu’une position approximative (pays, région) déduite de l’adresse IP. TAK’ désactive la collecte de l’identifiant publicitaire et n’y a pas accès. Google traite les données selon ses <a href="https://policies.google.com/privacy">règles de confidentialité</a>.</p>
-<p>La désactivation arrête la collecte et efface les données Analytics conservées localement par le SDK. Les parties, les achats en pièces et les sauvegardes restent utilisables.</p>
+<p>Si le partage est activé, Google Analytics pour Firebase reçoit la hauteur, le numéro et les pièces gagnées à la fin des parties, les dépenses en pièces et les mondes équipés. Google Analytics recueille aussi des informations sur l’utilisation de l’application (sessions, écrans affichés), des informations techniques sur l’appareil (modèle, version d’Android) et une position approximative (pays, région) déduite de l’adresse IP. TAK’ désactive la collecte de l’identifiant publicitaire et n’y a pas accès. Google traite les données selon ses <a href="https://policies.google.com/privacy">règles de confidentialité</a>.</p>
+<p>Firebase utilise pour cela des identifiants aléatoires créés sur votre appareil, sans lien avec votre nom, votre compte Google ou votre profil Play Jeux :</p>
+<ul>
+<li>l’identifiant d’instance de Google Analytics, qui distingue votre installation dans les statistiques ;</li>
+<li>l’identifiant d’installation Firebase, utilisé par les services Firebase pour reconnaître cette installation de l’application.</li>
+</ul>
+<p>La désactivation arrête la collecte, efface de l’appareil les données Analytics conservées par le SDK et remplace l’identifiant d’instance de Google Analytics par un nouveau. Effacer les données de l’application ou la désinstaller supprime aussi de l’appareil l’identifiant d’installation Firebase. Aucune de ces actions ne supprime les statistiques déjà envoyées : leur conservation est décrite plus bas. Les parties, les achats en pièces et les sauvegardes restent utilisables.</p>
 
 <h2>Google Play Jeux (application Android)</h2>
-<p>Dans l’application Android, le classement, les succès et la sauvegarde de votre progression passent par Google Play Jeux. Au lancement, le jeu vous connecte à votre profil Play Jeux : sans rien afficher si vous l’avez déjà accepté, sinon par une fenêtre de Google que vous pouvez refuser. Une fois connecté, le jeu transmet à Google, à la fin de chaque partie normale (pas pendant les défis) :</p>
+<p>Dans l’application Android, les classements, les succès et la sauvegarde de votre progression passent par Google Play Jeux. Au lancement, le jeu vous connecte à votre profil Play Jeux : sans rien afficher si vous l’avez déjà accepté, sinon par une fenêtre de Google que vous pouvez refuser. Une fois connecté, le jeu transmet à Google :</p>
 <ul>
-<li>votre score (nombre d’étages), pour le classement ;</li>
-<li>les succès obtenus et la progression des succès à étapes (nombre de parties jouées).</li>
+<li>à la fin de chaque partie normale : votre score (nombre d’étages) pour le classement « Étages », les succès obtenus et la progression des succès à étapes (nombre de parties jouées) ;</li>
+<li>après chaque défi : votre score au classement « Défis » (nombre de défis réussis et parfaits obtenus pendant ces défis) et les succès des défis réussis. Tous les défis déjà réussis sont renvoyés à chaque fois : un défi réussi sans connexion est donc compté lors d’un défi suivant joué en étant connecté.</li>
 </ul>
+<p>Au lancement, le jeu lit aussi votre meilleur score du classement « Étages » pour retrouver votre record après une réinstallation.</p>
 <p>Tant que vous êtes connecté, le jeu enregistre aussi votre portefeuille (pièces gagnées et dépensées, mondes et briques obtenus et équipés) dans les jeux sauvegardés de Play Jeux, pour le retrouver sur un autre appareil. Cette sauvegarde est mise à jour pendant que le jeu est ouvert.</p>
-<p>Google associe ces données à votre profil Play Jeux (pseudo et avatar). Selon vos paramètres Play Jeux, votre pseudo et votre score peuvent apparaître dans le classement, visibles par d’autres joueurs. Le kit Play Jeux de Google collecte aussi des données techniques de diagnostic pour son propre fonctionnement. Ces données sont transmises de façon chiffrée (HTTPS) et traitées par Google selon ses <a href="https://policies.google.com/privacy">règles de confidentialité</a>.</p>
-<p>Si vous refusez la connexion, aucune donnée du jeu n’est envoyée à Google Play Jeux et le jeu fonctionne normalement ; le score d’une partie jouée sans connexion n’est pas envoyé plus tard ; votre portefeuille, lui, est sauvegardé à la connexion suivante. Vous pouvez supprimer vos données Play Jeux, pour ce jeu ou pour tous, depuis votre <a href="https://play.google.com/games/profile">profil Play Jeux</a> ou votre <a href="https://myaccount.google.com">compte Google</a>. La version web du jeu n’utilise pas Google Play Jeux.</p>
+<p>Google associe ces données à votre profil Play Jeux : votre identifiant de joueur, votre pseudo et votre avatar. Le jeu ne lit ni votre pseudo, ni votre avatar, ni votre adresse e-mail. Selon vos paramètres Play Jeux, votre pseudo et vos scores peuvent apparaître dans les classements, visibles par d’autres joueurs.</p>
+<p>Le kit Play Jeux de Google, présent dans l’application, collecte aussi automatiquement ses propres données techniques d’analyse et de diagnostic, que Google utilise pour améliorer la stabilité de ses kits et ses produits. Google ne détaille pas le contenu de ces données. Cette collecte ne dépend pas de votre choix concernant les statistiques de jeu. Ces données sont transmises de façon chiffrée (HTTPS) et traitées par Google selon ses <a href="https://policies.google.com/privacy">règles de confidentialité</a>.</p>
+<p>Si vous refusez la connexion, le jeu n’envoie à Google Play Jeux ni score, ni succès, ni sauvegarde, et il fonctionne normalement. Le score d’une partie normale jouée sans connexion n’est pas envoyé plus tard ; votre portefeuille, lui, est sauvegardé à la connexion suivante. La version web du jeu n’utilise pas Google Play Jeux.</p>
 
 <h2>Conservation et suppression</h2>
-<p>Les rapports de diagnostic sont conservés 12 mois, puis supprimés.</p>
-<p>Google Analytics conserve les statistiques de jeu détaillées 2 mois, puis les supprime ; seuls des totaux, sans identifiant, restent dans les rapports. Les statistiques sont rattachées à un identifiant d’instance aléatoire, sans votre nom : désactiver le partage efface cet identifiant de l’appareil, et les statistiques détaillées déjà envoyées sont supprimées à la fin de ce délai.</p>
-<p>Pour demander leur suppression, écrivez à <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a> en indiquant votre identifiant d’installation. Il est affiché dans le jeu, dans Réglages &gt; Confidentialité. Tous les rapports liés à cet identifiant seront supprimés.</p>
+<p><strong>Données locales.</strong> Elles restent sur votre appareil jusqu’à ce que vous effaciez les données de l’application ou que vous la désinstalliez (voir plus haut).</p>
+<p><strong>Statistiques de jeu (Google Analytics).</strong> Les statistiques détaillées, rattachées à l’identifiant d’instance, sont conservées selon la durée de conservation réglée pour le jeu dans Google Analytics : 2 mois. Une fois ce délai écoulé, Google Analytics les supprime automatiquement lors de sa suppression mensuelle. Les rapports agrégés, qui ne contiennent que des totaux sans identifiant, ne sont pas concernés et restent disponibles. L’éditeur n’a pas accès aux identifiants Firebase de votre appareil : il ne peut donc ni retrouver vos statistiques ni les supprimer individuellement sur demande. Désactiver le partage arrête tout nouvel envoi ; les statistiques déjà envoyées suivent le délai ci-dessus.</p>
+<p><strong>Google Play Jeux.</strong> Vos scores, succès et sauvegardes sont conservés par Google. Vous pouvez les supprimer, pour ce jeu ou pour tous, depuis votre <a href="https://play.google.com/games/profile">profil Play Jeux</a> ou votre <a href="https://myaccount.google.com">compte Google</a>. L’éditeur ne peut pas les supprimer à votre place.</p>
+<p><strong>Diagnostics de la version web.</strong> Les rapports de diagnostic sont conservés 12 mois, puis supprimés. Pour demander leur suppression, écrivez à <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a> en indiquant votre identifiant d’installation. Il est affiché dans le jeu, dans Réglages &gt; Confidentialité. Tous les rapports liés à cet identifiant seront supprimés. L’application Android n’envoie pas de rapport de diagnostic : il n’y a donc rien à supprimer de ce côté.</p>
 
 <h2>Modifications</h2>
 <p>Toute modification de cette politique sera publiée sur cette page, avec une nouvelle date de mise à jour.</p>
@@ -95,10 +112,10 @@
 <article id="en" lang="en">
 <h1>TAK’ privacy policy</h1>
 <div class="policy-body">
-<p class="meta">Last updated: 24 November 2026.<br>
+<p class="meta">Last updated: 25 November 2026.<br>
 Publisher: Midnight O’Clock Studio. Contact: <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a>.</p>
 
-<p>TAK’ is a rhythm stacking game. It asks for no account, name or email address. It shows no ads. The Android app uses Google Play Games and offers optional gameplay statistics sharing through Google Analytics for Firebase.</p>
+<p>TAK’ is a rhythm stacking game. It does not ask you to create an account and asks for no name or email address. It shows no ads and offers no real-money purchases. The Android app uses Google Play Games (leaderboards, achievements, backup) and offers optional gameplay statistics sharing through Google Analytics for Firebase. It sends no diagnostics to the publisher.</p>
 
 <h2>What stays on your device</h2>
 <p>The game keeps in the app’s (or browser’s) local storage:</p>
@@ -108,15 +125,24 @@ Publisher: Midnight O’Clock Studio. Contact: <a href="mailto:midnightoclockstu
 <li>a local history of your last 60 games (score, duration, how the game ended);</li>
 <li>your wallet: coins earned and spent, worlds and bricks you own and equip;</li>
 <li>your choices about diagnostics and gameplay statistics;</li>
-<li>the number of finished runs and, when available, the total coins earned in the first ten (Android app).</li>
+<li>the number of finished runs and, when available, the total coins earned in the first ten (Android app);</li>
+<li>your sound sync profiles: an offset in milliseconds for each type of audio output (speaker, wired headphones, Bluetooth headset, other). The game only detects the type of output in use: it reads neither the name nor the address of your Bluetooth devices and asks for no Bluetooth permission;</li>
+<li>in the Android app, a random token specific to this installation, and the phone’s manufacturer and model. They are used only to check that your sound sync profiles were confirmed on this phone;</li>
+<li>in the Android app, if you are signed in to Google Play Games, your Play Games player ID, to keep each profile’s progress separate.</li>
 </ul>
+<p>The publisher receives none of this data. Only what the “Optional gameplay statistics” and “Google Play Games” sections below describe leaves the device, plus the Android backup handled by the system.</p>
 <p>To erase local data: on Android, Settings &gt; Apps &gt; TAK’ &gt; Storage &gt; Clear data, or uninstall the game; in a browser, clear the site’s data.</p>
 
-<h2>Diagnostics</h2>
-<p>Depending on the installed version, the game works in one of the two ways below. The Privacy window, in the game’s Settings, tells you which one applies.</p>
+<h3>Android backup and restore</h3>
+<p>If Android backup is turned on for your phone, Android may copy this data to your Google Account, then restore it or transfer it to a new phone. This backup is handled by Android and Google: the publisher does not receive it.</p>
+<p>Excluded from it: your choice about gameplay statistics, Google Analytics’ local data, and the installation token. After a restore or transfer, the game therefore asks for your choice again, and nothing is sent to Google Analytics before you answer. The game also creates a new token: your restored sound sync profiles are offered to you, but applied only once you confirm them.</p>
+
+<h2>Publisher diagnostics</h2>
+<p>The Android app sends no diagnostics to the publisher: this feature is absent from its version, and no diagnostics installation ID is created in it. The Google kits built into the app (Google Play Games and, if you accept, Google Analytics for Firebase) may however collect their own technical data. They are described in the sections below.</p>
+<p>The web version of the game works in one of the two ways below. The Privacy window, in the game’s Settings, tells you which one applies.</p>
 
 <h3>Version without diagnostics</h3>
-<p>No diagnostics are sent and no installation ID is created.</p>
+<p>No diagnostics are sent and no diagnostics installation ID is created.</p>
 
 <h3>Version with optional diagnostics</h3>
 <p>Diagnostics stay off until you turn them on in the Settings. Once on, the game sends a report to the publisher at the end of each game and when you pause. The report contains:</p>
@@ -133,23 +159,31 @@ Publisher: Midnight O’Clock Studio. Contact: <a href="mailto:midnightoclockstu
 
 <h2>Optional gameplay statistics (Android app)</h2>
 <p>Statistics sharing is off by default. When you first launch the app, you can choose to share statistics or continue without sharing. In Settings &gt; Data and privacy, you can turn “Share gameplay statistics” on or off at any time. Your choice is saved on this device.</p>
-<p>If sharing is on, Google Analytics for Firebase receives the height, run number and coins earned at the end of runs, coin spending, and equipped cards. Google Analytics uses an app instance identifier and also collects technical information about the device and app usage, and an approximate location (country, region) derived from the IP address. TAK’ disables advertising ID collection and has no access to it. Google processes the data under its <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
-<p>Turning sharing off stops collection and clears Analytics data stored locally by the SDK. Runs, coin purchases, and saves remain available.</p>
+<p>If sharing is on, Google Analytics for Firebase receives the height, run number and coins earned at the end of runs, coin spending, and equipped worlds. Google Analytics also collects information about app usage (sessions, screens shown), technical information about the device (model, Android version), and an approximate location (country, region) derived from the IP address. TAK’ disables advertising ID collection and has no access to it. Google processes the data under its <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+<p>For this, Firebase uses random identifiers created on your device, unrelated to your name, your Google Account or your Play Games profile:</p>
+<ul>
+<li>the Google Analytics app instance ID, which tells your installation apart in the statistics;</li>
+<li>the Firebase installation ID, used by Firebase services to recognise this installation of the app.</li>
+</ul>
+<p>Turning sharing off stops collection, clears from the device the Analytics data kept by the SDK, and replaces the Google Analytics app instance ID with a new one. Clearing the app’s data or uninstalling it also removes the Firebase installation ID from the device. None of these actions deletes statistics already sent: their retention is described below. Runs, coin purchases, and saves remain available.</p>
 
 <h2>Google Play Games (Android app)</h2>
-<p>In the Android app, the leaderboard, achievements and your progress backup go through Google Play Games. At launch, the game signs you in to your Play Games profile: silently if you already accepted, otherwise through a Google window you can decline. Once you are signed in, the game sends Google, at the end of each normal game (not during challenges):</p>
+<p>In the Android app, the leaderboards, achievements and your progress backup go through Google Play Games. At launch, the game signs you in to your Play Games profile: silently if you already accepted, otherwise through a Google window you can decline. Once you are signed in, the game sends Google:</p>
 <ul>
-<li>your score (number of floors), for the leaderboard;</li>
-<li>the achievements you earned and the progress of step achievements (number of games played).</li>
+<li>at the end of each normal game: your score (number of floors) for the “Floors” leaderboard, the achievements you earned, and the progress of step achievements (number of games played);</li>
+<li>after each challenge: your score on the “Challenges” leaderboard (number of challenges cleared and perfects earned in them) and the achievements of the challenges you cleared. Every challenge already cleared is sent again each time, so a challenge cleared while signed out counts at a later challenge played while signed in.</li>
 </ul>
+<p>At launch, the game also reads your best score on the “Floors” leaderboard to recover your record after a reinstall.</p>
 <p>While you are signed in, the game also saves your wallet (coins earned and spent, worlds and bricks you own and equip) in Play Games saved games, so you can get it back on another device. This backup is updated while the game is open.</p>
-<p>Google links this data to your Play Games profile (gamer name and avatar). Depending on your Play Games settings, your gamer name and score may appear in the leaderboard, visible to other players. Google’s Play Games kit also collects technical diagnostics for its own operation. This data is sent encrypted (HTTPS) and handled by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
-<p>If you decline to sign in, no game data is sent to Google Play Games and the game works normally; the score of a game played while signed out is not sent later; your wallet is saved at your next sign-in. You can delete your Play Games data, for this game or for all games, from your <a href="https://play.google.com/games/profile">Play Games profile</a> or your <a href="https://myaccount.google.com">Google Account</a>. The web version of the game does not use Google Play Games.</p>
+<p>Google links this data to your Play Games profile: your player ID, gamer name and avatar. The game reads neither your gamer name, nor your avatar, nor your email address. Depending on your Play Games settings, your gamer name and scores may appear in the leaderboards, visible to other players.</p>
+<p>Google’s Play Games kit, built into the app, also automatically collects its own technical analytics and diagnostics data, which Google uses to improve the stability of its kits and its products. Google does not detail what this data contains. This collection does not depend on your choice about gameplay statistics. This data is sent encrypted (HTTPS) and handled by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+<p>If you decline to sign in, the game sends Google Play Games no score, no achievement and no save, and works normally. The score of a normal game played while signed out is not sent later; your wallet is saved at your next sign-in. The web version of the game does not use Google Play Games.</p>
 
 <h2>Retention and deletion</h2>
-<p>Diagnostic reports are kept for 12 months, then deleted.</p>
-<p>Google Analytics keeps detailed gameplay statistics for 2 months, then deletes them; only totals, with no identifier, remain in reports. Statistics are linked to a random app instance identifier, not to your name: turning sharing off erases this identifier from the device, and detailed statistics already sent are deleted at the end of that period.</p>
-<p>To ask for their deletion, write to <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a> with your installation ID. It is shown in the game, in Settings &gt; Privacy. All reports linked to this ID will be deleted.</p>
+<p><strong>Local data.</strong> It stays on your device until you clear the app’s data or uninstall it (see above).</p>
+<p><strong>Gameplay statistics (Google Analytics).</strong> Detailed statistics, linked to the app instance ID, are kept for the retention period set for the game in Google Analytics: 2 months. Once that period has passed, Google Analytics deletes them automatically in its monthly deletion. Aggregated reports, which hold only totals with no identifier, are not affected and remain available. The publisher has no access to your device’s Firebase identifiers, so it can neither find your statistics nor delete them individually on request. Turning sharing off stops any new sending; statistics already sent follow the period above.</p>
+<p><strong>Google Play Games.</strong> Your scores, achievements and saves are kept by Google. You can delete them, for this game or for all games, from your <a href="https://play.google.com/games/profile">Play Games profile</a> or your <a href="https://myaccount.google.com">Google Account</a>. The publisher cannot delete them for you.</p>
+<p><strong>Web version diagnostics.</strong> Diagnostic reports are kept for 12 months, then deleted. To ask for their deletion, write to <a href="mailto:midnightoclockstudio@gmail.com">midnightoclockstudio@gmail.com</a> with your installation ID. It is shown in the game, in Settings &gt; Privacy. All reports linked to this ID will be deleted. The Android app sends no diagnostic reports, so there is nothing to delete on that side.</p>
 
 <h2>Changes</h2>
 <p>Any change to this policy will be published on this page, with a new update date.</p>
